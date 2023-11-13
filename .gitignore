@@ -1,0 +1,2 @@
+# Ignorar archivos de dependencias y módulos (por ejemplo, para Node.js)
+node_modules/
