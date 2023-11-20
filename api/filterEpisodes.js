@@ -2,11 +2,11 @@
 // api/filterEpisodes.js
 import axios from 'axios';
 import baseUrl from '../utils/baseUrl.js'; // Ajusté la ruta para que sea relativa
-
+ 
 async function filterEpisodes(name, status) {
   try {
     const response = await axios.get(`${baseUrl}/episode`, {
-      params: { name, status },
+      params: {name, status},
     });
     return response.data.results;
   } catch (error) {
@@ -14,5 +14,5 @@ async function filterEpisodes(name, status) {
     throw error;
   }
 }
-
+ 
 export { filterEpisodes };
